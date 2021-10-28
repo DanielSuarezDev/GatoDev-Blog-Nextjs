@@ -32,3 +32,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Config babelrc - emotion para utilizar styled
+
+Se debe instalar estas dependencias
+
+```
+@babel/core - @emotion/babel-plugin - @emotion/babel-preset-css-prop - @emotion/react - @emotion/styled - babel-plugin-emotion
+```
+
+adicional a eso se debe poner esta configuracion
+
+```javascript
+{
+  "presets": ["next/babel", "@emotion/babel-preset-css-prop"],
+  "plugins": [["@emotion"]]
+}
+```
